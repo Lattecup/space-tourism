@@ -1,0 +1,124 @@
+.home {
+  width: 70%;
+  padding: 387px 0 131px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__text {
+  max-width: 445px;
+}
+
+.home__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: 4.725px;
+  color: #D0D6F9;
+  text-transform: uppercase;
+}
+
+.home__title-accent {
+  display: block;
+  margin: 24px 0;
+  font-family: 'Bellefair';
+  font-weight: 400;
+  font-size: 145px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.home__paragraph {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #D0D6F9;
+}
+
+.home__button {
+  width: 274px;
+  height: 274px;
+  margin-top: 108px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: #FFFFFF;
+  font-family: 'Bellefair';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #0B0D17;
+  transition: box-shadow ease 1s;
+}
+
+.home__button:hover {
+  box-shadow: 0px 0px 5px 88px rgba(151, 151, 151, 0.4);
+}
+
+@media screen and (max-width: 1100px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    padding: 202px 0 90px;
+  }
+  .home__text {
+    text-align: center;
+  }
+  .home__title {
+    font-size: 20px;
+    letter-spacing: 3.375px;
+  }
+  .home__paragraph {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  .home__button {
+    margin-top: 156px;
+    width: 242px;
+    height: 242px;
+  }
+  .home__button:hover {
+    box-shadow: 0px 0px 5px 50px rgba(151, 151, 151, 0.4);
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .home {
+    padding: 112px 0 48px;
+  }
+  .home__text {
+    max-width: 327px;
+  }
+  .home__title {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 2.7px;
+  }
+  .home__title-accent {
+    font-size: 80px;
+    line-height: 1.25;
+    margin: 16px 0;
+  }
+  .home__paragraph {
+    font-size: 15px;
+    line-height: 1.67;
+  }
+  .home__button {
+    margin-top: 81px;
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 1.25px;
+  }
+  .home__button:hover {
+    box-shadow: 0px 0px 5px 30px rgba(151, 151, 151, 0.4);
+  }
+}

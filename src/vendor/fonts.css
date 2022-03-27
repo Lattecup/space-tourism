@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/BarlowCondensed-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/BarlowCondensed-Bold.woff") format("woff"),
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Barlow-Regular.woff") format("woff"),
+}
+
+@font-face {
+  font-family: 'Bellefair';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Bellefair-Regular.woff") format("woff"),
+}

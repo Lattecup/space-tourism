@@ -1,0 +1,220 @@
+.crew {
+  width: 79%;
+  margin: 0 auto;
+  padding-top: 212px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.crew__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.crew__title {
+  width: 100%;
+  margin: 0;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.crew__description {
+  max-width: 615px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.crew__title-span-accent {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: 4.725px;
+  color: #979797;
+  padding-right: 28px;
+}
+
+.crew__list {
+  margin: 120px 0 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-self: stretch;
+  gap: 24px;
+}
+
+.crew__list-item {
+  padding: 0;
+  background-color: #979797;
+  border: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 1s;
+}
+
+.crew__list-item:hover {
+  opacity: 0.5;
+}
+
+.crew__list-item_active {
+  background-color: #FFFFFF;
+}
+
+.persons {
+  display: flex;
+  flex-direction: column;
+}
+
+.persons__role {
+  margin: 0;
+  padding-bottom: 15px;
+  font-family: 'Bellefair';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: #979797;
+  mix-blend-mode: normal;
+}
+
+.persons__name {
+  margin: 0;
+  padding-bottom: 27px;
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.persons__bio {
+  max-width: 444px;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #D0D6F9;
+}
+
+.crew__image {
+  align-self: flex-end;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1100px) {
+  .crew {
+    padding-top: 136px;
+  }
+  .crew__title {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 3.375px;
+  }
+  .crew__title-span-accent {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 3.375px;
+    padding-right: 16px;
+  }
+  .crew__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .crew__description {
+    width: 100%;
+    margin-top: 60px;
+    align-items: center;
+  }
+  .persons {
+    align-items: center;
+  }
+  .persons__role {
+    font-size: 24px;
+    line-height: 1.17;
+    padding-bottom: 8px;
+  }
+  .persons__name {
+    font-size: 40px;
+    line-height: 1.15;
+    padding-bottom: 16px;
+    text-align: center;
+  }
+  .persons__bio {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  .crew__list {
+    margin: 40px auto 40px;
+  }
+  .crew__list-item {
+    width: 10px;
+    height: 10px;
+  }
+  .crew__image {
+    width: 100%;
+    align-self: center;
+    max-height: 532px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .crew {
+    display: grid;
+    grid-template-rows: max-content;
+    justify-content: center;
+    padding: 88px 0 104px;
+  }
+  .crew__title {
+    text-align: center;
+    padding-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 2.7px;  
+  }
+  .crew__title-span-accent {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 2.7px;  
+  }
+  .crew__content {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+  .crew__description {
+    margin: 0;
+    flex-direction: column-reverse;
+  }
+  .crew__list {
+    margin: 0 auto 32px;
+  }
+  .persons__role {
+    font-size: 16px;
+    line-height: 1.12;
+  }
+  .persons__name {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .persons__bio {
+    font-size: 15px;
+    line-height: 1.67;
+  }
+  .crew__image {
+    max-height: 223px;
+    border-bottom: 1px solid #383B4B;
+  }
+}

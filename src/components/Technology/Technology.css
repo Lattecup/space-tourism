@@ -1,0 +1,236 @@
+.technology {
+  width: 90%;
+  margin-left: 165px;
+  padding: 212px 0 101px;
+}
+
+.technology__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.technology__title-span-accent {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: 4.725px;
+  color: #979797;
+  padding-right: 28px;
+}
+
+.technology__content {
+  width: 100%;
+  display: flex;
+  padding-top: 26px;
+  justify-content: space-between;
+}
+
+.technology__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.technology__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 32px;
+}
+
+.technology__list-item {
+  font-family: 'Bellefair';
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 2px;
+  border-radius: 50%;
+  color: #979797;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  transition: color 1s;
+}
+
+.technology__list-item:hover {
+  color: #FFFFFF;
+}
+
+.technology__list-item_active {
+  color: #0B0D17;
+  background-color: #FFFFFF;
+}
+
+.technology__image {
+  max-width: 515px;
+  max-height: 527px;
+}
+
+.technology__image-landscape {
+  display: none;
+}
+
+.terminology {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+}
+
+.terminology__paragraph {
+  margin: 0;
+  padding-bottom: 11px;
+  font-family: 'Barlow Condensed';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 2.7px;
+  color: #D0D6F9;
+  text-transform: uppercase;
+}
+
+.terminology__title {
+  margin: 0;
+  padding-bottom: 17px;
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.14;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.terminology__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #D0D6F9;
+}
+
+@media screen and (max-width: 1309px) {
+  .technology {
+    margin: 0 auto;
+    padding: 136px 0 97px;
+  }
+  .technology__content {
+    flex-direction: column-reverse;
+    padding-top: 60px;
+  }
+  .technology__title {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 3.375px; 
+  }
+  .technology__title-span-accent {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 3.375px;
+    padding-right: 16px;
+  }
+  .technology__description {
+    flex-direction: column;
+    padding-top: 56px;
+    gap: 44px;
+  }
+  .technology__list {
+    flex-direction: row;
+  }
+  .technology__list-item {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 1.17; 
+  }
+  .technology__image {
+    display: none;
+  }
+  .technology__image-landscape {
+    display: flex;
+    width: 100%;
+    max-height: 310px;
+    object-fit: cover;
+  }
+  .terminology {
+    max-width: 458px;
+  }
+  .terminology__paragraph {
+    text-align: center;
+    padding-bottom: 16px;
+  }
+  .terminology__text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  .terminology__title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.15;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .technology {
+    padding: 88px 0 81px;
+  }
+  .technology__title {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 2.7px;    
+  }
+  .technology__title-span-accent {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 2.7px;
+  }
+  .technology__content {
+    padding-top: 32px;
+  }
+  .technology__description {
+    padding-top: 34px;
+    gap: 26px;
+  }
+  .technology__list-item {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 1.13;
+  }
+  .technology__image-landscape {
+    max-height: 170px;
+  }
+  .terminology {
+    max-width: 327px;
+  }
+  .terminology__paragraph {
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 2.3625px;
+  }
+  .terminology__title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .terminology__text {
+    font-size: 15px;
+    line-height: 1.67;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .terminology {
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,110 @@
+.menu-mobile {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s linear, opacity 0.2s linear;
+  position: fixed;
+  width: 254px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(81.5485px);
+  backdrop-filter: blur(81.5485px);
+}
+
+.menu-mobile_opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-mobile__open-button {
+  display: none;
+  background-color: transparent;
+  background-image: url(../../images/hamburger.svg);
+  cursor: pointer;
+  width: 24px;
+  height: 21px;
+  border: none;
+  padding: 0;
+}
+
+.menu-mobile__navigation {
+  padding: 118px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-mobile__links {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.menu-mobile__link {
+  text-decoration: none;
+  font-family: 'Barlow Condensed';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 2.7px; 
+  color: #FFFFFF;
+  text-transform: uppercase;
+  transition: opacity 1s;
+}
+
+.menu-mobile__link:hover {
+  opacity: 0.5;
+}
+
+.menu-mobile__link-span-accent {
+  padding-right: 11px;
+  font-family: 'Barlow Condensed';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 2.7px;
+  color: #FFFFFF;
+}
+
+.menu-mobile__link_active {
+  text-decoration: none;
+  font-family: 'Barlow Condensed';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 2.7px; 
+  color: #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  transition: opacity 1s;
+}
+
+.menu-mobile__link_active:hover {
+  opacity: 0.5;
+}
+
+.menu-mobile__close-button {
+  position: absolute;
+  top: 34px;
+  right: 26px;
+  padding: 0;
+  background-image: url(../../images/icon-close.svg);
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+  .menu-mobile__open-button {
+    display: flex;
+    margin-right: 24px;
+  }
+}

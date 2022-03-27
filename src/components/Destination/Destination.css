@@ -1,0 +1,241 @@
+.destination {
+  width: 79%;
+  margin: 0 auto;
+  padding: 212px 0 112px;
+}
+
+.destination__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.destination__title-span-accent {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: 4.725px;
+  color: #979797;
+  padding-right: 28px;
+}
+
+.destination__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 64px;
+}
+
+.destination__image {
+  max-width: 445px;
+  max-height: 445px;
+}
+
+.destination__description {
+  display: flex;
+  flex-direction: column;
+  max-width: 445px;
+}
+
+.destination__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  gap: 36px;
+}
+
+.destination__list-item {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 2.7px;
+  color: #D0D6F9;
+  text-transform: uppercase;
+  transition: opacity 1s;
+}
+
+.destination__list-item:hover {
+  opacity: 0.5;
+}
+
+.destination__list-item_active {
+  border-bottom: 3px solid #FFFFFF;
+  padding-bottom: 12px;
+}
+
+.planet {
+  display: flex;
+  flex-direction: column;
+}
+
+.planet__title {
+  margin: 37px 0 0;
+  font-family: 'Bellefair';
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.planet__description {
+  margin: 0;
+  padding: 14px 0 54px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #D0D6F9;
+  border-bottom: 1px solid #383B4B;
+}
+
+.planet__info {
+  display: flex;
+  justify-content: flex-start;
+  gap: 80px;
+  margin-top: 28px;
+}
+
+.planet__distance {
+  display: flex;
+  flex-direction: column;
+  max-width: 165px;
+  gap: 12px;
+}
+
+.planet__travel {
+  display: flex;
+  flex-direction: column;
+  max-width: 144px;
+  gap: 12px;
+}
+
+.planet__paragraph-title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #D0D6F9;
+}
+
+.planet__paragraph {
+  margin: 0;
+  font-family: 'Bellefair';
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1300px) {
+  .destination {
+    width: 90%;
+    padding: 136px 0 62px;
+  }
+  .destination__title {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 3.375px;
+  }
+  .destination__title-span-accent {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 3.375px;
+    padding-right: 19px;
+  }
+  .destination__content {
+    flex-direction: column;
+    padding-top: 60px;
+    gap: 53px;
+  }
+  .destination__image {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .destination__description {
+    align-items: center;
+    max-width: 575px;
+  }
+  .planet {
+    align-items: center;
+  }
+  .planet__title {
+    margin: 32px 0 0;
+    font-size: 80px;
+  }
+  .planet__description {
+    padding: 8px 0 49px;
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: center;
+  }
+  .planet__distance {
+    align-items: center;
+  }
+  .planet__travel {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .destination {
+    padding: 92px 0 58px;
+  }
+  .destination__content {
+    padding-top: 32px;
+    gap: 26px;
+  }
+  .destination__title {
+    text-align: center;
+  }
+  .destination__image {
+    max-width: 170px;
+    max-height: 170px;
+  }
+  .destination__description {
+    max-width: 327px;
+  }
+  .destination__list {
+    gap: 26px;
+  }
+  .destination__list-item {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  .destination__list-item_active {
+    padding-bottom: 8px;
+  }
+  .planet__title {
+    margin: 20px 0 0;
+    font-size: 56px;
+    line-height: 1.14;
+  }
+  .planet__description {
+    padding: 1px 0 32px;
+    font-size: 15px;
+    line-height: 1.67;
+  }
+  .planet__info {
+    margin-top: 32px;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .planet__distance {
+    max-width: 223px;
+  }
+  .planet__travel {
+    max-width: 223px;
+  }
+}
