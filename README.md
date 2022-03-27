@@ -18,5 +18,3 @@ https://github.com/Lattecup/space-tourism.git
 * Run the application in the project directory:  
 npm install  
 npm start
-
-## Project link:
